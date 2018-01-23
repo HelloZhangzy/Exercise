@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAEnDe", "RSAEnDe\RSAEnDe.csproj", "{191DBC24-80D9-4614-8638-13B605D8BCEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{191DBC24-80D9-4614-8638-13B605D8BCEE}.Debug|x86.ActiveCfg = Debug|x86
+		{191DBC24-80D9-4614-8638-13B605D8BCEE}.Debug|x86.Build.0 = Debug|x86
+		{191DBC24-80D9-4614-8638-13B605D8BCEE}.Release|x86.ActiveCfg = Release|x86
+		{191DBC24-80D9-4614-8638-13B605D8BCEE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

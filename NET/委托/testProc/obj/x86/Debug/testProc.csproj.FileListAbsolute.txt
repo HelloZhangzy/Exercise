@@ -1,0 +1,5 @@
+F:\Exercise\C#\testProc\testProc\bin\Debug\testProc.exe
+F:\Exercise\C#\testProc\testProc\bin\Debug\testProc.pdb
+F:\Exercise\C#\testProc\testProc\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Exercise\C#\testProc\testProc\obj\x86\Debug\testProc.exe
+F:\Exercise\C#\testProc\testProc\obj\x86\Debug\testProc.pdb
