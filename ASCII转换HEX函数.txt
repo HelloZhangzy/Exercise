@@ -1,0 +1,23 @@
+//10进制转换成16进制串，count为10进制数据长度，进行数据扩展
+void HEX_2_DSP(unsigned char *hex,unsigned char *dsp,int count)
+{
+	unsigned  buf[3];
+	int i;
+	for(i=0;i<count;i++){
+		sprintf((char *)buf,"%02X",(char *)hex[i]);
+		memcpy(&dsp[i*2],buf,2);
+	}
+	dsp[count*2]=0x0;
+}
+
+//16进制转换成10进制串，count为16进制数据长度的一半，进行数据压缩
+void DSP_2_HEX(unsigned char *dsp,unsigned char *hex,int count)
+{	
+	int i;
+	unsigned char ch1, ch2;
+	for (i = 0; i < count; i++){
+		ch1 = dsp[i*2], ch2 = dsp[i*2+1];
+		hex[i]=(unsigned char)((((ch1<=0x39)?ch1-0x30:(ch1&0xdf)-0x41+10)<<4)\
+			|((ch2<=0x39)?ch2-0x30:(ch2&0xdf)-0x41+10));
+	}
+}
