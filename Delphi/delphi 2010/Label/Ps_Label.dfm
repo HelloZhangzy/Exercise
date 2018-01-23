@@ -1,0 +1,39 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  AlphaBlend = True
+  BorderStyle = bsNone
+  Caption = 'Form1'
+  ClientHeight = 281
+  ClientWidth = 488
+  Color = clFuchsia
+  TransparentColor = True
+  TransparentColorValue = clFuchsia
+  UseDockManager = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 8
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = #23884#20837#26700#38754
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 89
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = #21462#28040#23884#20837
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+end

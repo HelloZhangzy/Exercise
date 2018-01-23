@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.453,=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\AppletModule1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.468,=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013-01-16 14:33:26.515,=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013-01-16 14:36:37.765,E:\Exercise\delphi\XE2\线程\Unit1.dfm=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2013-01-16 14:36:37.765,E:\Exercise\delphi\XE2\线程\Unit1.pas=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013-01-16 14:36:57.437,E:\Exercise\delphi\XE2\线程\RSServer.dproj=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2013-01-16 14:37:14.484,E:\Exercise\delphi\XE2\线程\Unit1.pas=</Transaction>
+    <Transaction>2013-01-16 14:37:27.546,=E:\Exercise\delphi\XE2\线程\Unit2.pas</Transaction>
+    <Transaction>2013-01-16 14:37:37.828,E:\Exercise\delphi\XE2\线程\MainFr.pas=E:\Exercise\delphi\XE2\线程\Unit2.pas</Transaction>
+    <Transaction>2013-01-16 14:37:37.828,E:\Exercise\delphi\XE2\线程\MainFr.dfm=E:\Exercise\delphi\XE2\线程\Unit2.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.468,=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.156,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.dfm=E:\Exercise\delphi\XE2\线程\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.234,E:\Exercise\delphi\XE2\线程\Unit2.pas=E:\Exercise\delphi\XE2\线程\SendThread.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.750,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Project1.dproj=E:\Exercise\delphi\XE2\线程\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.156,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas=E:\Exercise\delphi\XE2\线程\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.812,=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.921,E:\Exercise\delphi\XE2\线程\Unit2.pas=E:\Exercise\delphi\XE2\线程\GWDServer.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.578,=E:\Exercise\delphi\XE2\线程\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.453,=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\AppletModule1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.656,=E:\Exercise\delphi\XE2\线程\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.781,E:\Exercise\delphi\XE2\线程\Unit2.pas=E:\Exercise\delphi\XE2\线程\RevThread.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.890,=E:\Exercise\delphi\XE2\线程\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

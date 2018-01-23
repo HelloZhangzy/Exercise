@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012-07-09 11:32:50.468.pas,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\RWCard.pas</Transaction>
+    <Transaction>2012-07-09 11:32:50.468.dfm,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\RWCard.dfm</Transaction>
+    <Transaction>2012-07-09 11:33:02.203.pas,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\RWCard.pas=E:\Exercise\RWCard\RWCard.pas</Transaction>
+    <Transaction>2012-07-09 11:33:02.203.dfm,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\RWCard.dfm=E:\Exercise\RWCard\RWCard.dfm</Transaction>
+    <Transaction>2012-07-09 11:33:54.875.dproj,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Project1.dproj=E:\Exercise\RWCard\RWCard_Pr.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

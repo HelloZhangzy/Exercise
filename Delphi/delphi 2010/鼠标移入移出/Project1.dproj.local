@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012-05-09 15:07:57.288.pas,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas=E:\Exercise\delphi 2010\鼠标移入移出\Unit1.pas</Transaction>
+    <Transaction>2012-05-09 15:07:57.288.dfm,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.dfm=E:\Exercise\delphi 2010\鼠标移入移出\Unit1.dfm</Transaction>
+    <Transaction>2012-05-09 15:07:57.741.dproj,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Project1.dproj=E:\Exercise\delphi 2010\鼠标移入移出\Project1.dproj</Transaction>
+    <Transaction>2012-05-09 15:13:28.038.pas,E:\Exercise\delphi 2010\鼠标移入移出\Unit2.pas=E:\Exercise\delphi 2010\鼠标移入移出\NewPanel.pas</Transaction>
+  </Transactions>
+</BorlandProject>

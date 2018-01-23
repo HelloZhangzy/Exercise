@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017-06-12 13:59:56.769.pas,C:\Users\admin\Documents\RAD Studio\Projects\Unit1.pas=E:\Exercise\delphi\delphi 7 2007\反算数据库密钥\Unit12.pas</Transaction>
+    <Transaction>2017-06-12 13:59:56.769.dfm,C:\Users\admin\Documents\RAD Studio\Projects\Unit1.dfm=E:\Exercise\delphi\delphi 7 2007\反算数据库密钥\Unit12.dfm</Transaction>
+    <Transaction>2017-06-12 14:00:00.959.dproj,C:\Users\admin\Documents\RAD Studio\Projects\Project1.dproj=E:\Exercise\delphi\delphi 7 2007\反算数据库密钥\Project1.dproj</Transaction>
+    <Transaction>2017-06-12 14:00:21.512.pas,E:\Exercise\delphi\delphi 7 2007\反算数据库密钥\Unit12.pas=</Transaction>
+    <Transaction>2017-06-12 14:00:21.512.dfm,E:\Exercise\delphi\delphi 7 2007\反算数据库密钥\Unit12.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

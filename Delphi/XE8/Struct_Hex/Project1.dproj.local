@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.475,C:\Users\admin\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\Exercise\delphi\XE8\Struct_Hex\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.668,=E:\Exercise\delphi\XE8\Struct_Hex\superobject.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.475,C:\Users\admin\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\Exercise\delphi\XE8\Struct_Hex\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.698,=E:\Exercise\delphi\XE8\Struct_Hex\superxmlparser.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.172,C:\Users\admin\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Exercise\delphi\XE8\Struct_Hex\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.565,=C:\Users\admin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012-01-04 09:04:52.796.pas,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas=E:\Exercise\delphi\线程\多线程同步\Unit1.pas</Transaction>
+    <Transaction>2012-01-04 09:04:52.796.dfm,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.dfm=E:\Exercise\delphi\线程\多线程同步\Unit1.dfm</Transaction>
+    <Transaction>2012-01-04 09:04:53.312.dproj,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Project1.dproj=E:\Exercise\delphi\线程\多线程同步\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
