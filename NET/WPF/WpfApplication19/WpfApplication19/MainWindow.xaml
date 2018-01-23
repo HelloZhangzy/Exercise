@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApplication19.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication19"
+        mc:Ignorable="d"
+        Title="Routed Event" Height="350" Width="525"
+        local:TimeButton.ReportTime="timeButton_ReportTime" x:Name="windows1">
+    <Grid x:Name="gridRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" x:Name="gridA" Margin="10" Background="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Canvas x:Name="canvasLeft" Grid.Column="0" Background="Red" Margin="10">
+                <Button x:Name="buttonLeft" Content="Left" Width="40" Height="60" Margin="10"/>
+            </Canvas>
+            <Canvas x:Name="canvasRight" Grid.Column="1" Background="Yellow" Margin="10">
+                <Button x:Name="buttonRight" Content="Left" Width="40" Height="60" Margin="10" Click="buttonRight_Click"/>
+            </Canvas>
+        </Grid>
+        <Grid Grid.Row="1" x:Name="grid_1" local:TimeButton.ReportTime="timeButton_ReportTime">
+            <Grid x:Name="grid_2" local:TimeButton.ReportTime="timeButton_ReportTime">
+                <Grid x:Name="grid_3" local:TimeButton.ReportTime="timeButton_ReportTime">
+                    <StackPanel x:Name="stackPanel_1" local:TimeButton.ReportTime="timeButton_ReportTime">
+                        <ListBox x:Name="ListBox"/>
+                        <local:TimeButton x:Name="timeButton" Width="80" Height="80" Content="报时" 
+                                         local:TimeButton.ReportTime="timeButton_ReportTime"/>
+                        
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+
+        <StackPanel  Grid.Row="2">
+            <Button x:Name="button1" Content="OK" Click="button1_Click"></Button>
+            <Button x:Name="button2" Content="OK" Click="button2_Click" Margin="10">
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

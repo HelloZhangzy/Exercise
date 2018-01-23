@@ -1,0 +1,13 @@
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\bin\Debug\WpfApplication5.exe
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\bin\Debug\WpfApplication5.pdb
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.csprojResolveAssemblyReference.cache
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\MainWindow.g.cs
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\App.g.cs
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5_MarkupCompile.cache
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5_MarkupCompile.lref
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\MainWindow.baml
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.g.resources
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.Properties.Resources.resources
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.csproj.GenerateResource.Cache
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.exe
+F:\Exercise\Net\C#\WPF\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.pdb

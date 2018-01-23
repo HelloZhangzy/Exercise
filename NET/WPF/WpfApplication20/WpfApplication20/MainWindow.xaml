@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApplication20.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication20"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="689" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="24"></RowDefinition>
+            <RowDefinition Height="4" ></RowDefinition>
+            <RowDefinition Height="24"></RowDefinition>
+            <RowDefinition Height="4"></RowDefinition>
+            <RowDefinition Height="24"></RowDefinition>
+            <RowDefinition Height="4"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" x:Name="stackPanel">
+            <Button x:Name="button1" Content="send command" Margin="5"/>
+            <TextBox x:Name="textBoxA" Margin="5" Height="80"/>         
+        </StackPanel>
+        <TextBlock Text="name:"  VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1"/>
+        <TextBox x:Name="nameTextBox" Margin="60,0,0,0" Width="300" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" />
+        <Button Content="New Teacher" Command="New" CommandParameter="Teacher" Grid.Row="3"/>
+        <Button Content="New Teacher" Command="New" CommandParameter="Student" Grid.Row="5"/>
+        <ListBox x:Name="ListBoxNewItems" Grid.Row="7"/>
+    </Grid>
+    <Window.CommandBindings>
+        <CommandBinding Command="New" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+    </Window.CommandBindings>
+</Window>

@@ -1,0 +1,15 @@
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\bin\Debug\WpfApplication19.exe.config
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\bin\Debug\WpfApplication19.exe
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\bin\Debug\WpfApplication19.pdb
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\WpfApplication19.csprojResolveAssemblyReference.cache
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\MainWindow.g.cs
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\App.g.cs
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\WpfApplication19_MarkupCompile.cache
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\WpfApplication19_MarkupCompile.lref
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\MainWindow.baml
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\WpfApplication19.g.resources
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\WpfApplication19.Properties.Resources.resources
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\WpfApplication19.csproj.GenerateResource.Cache
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\WpfApplication19.exe
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\WpfApplication19.pdb
+F:\Exercise\Net\C#\WPF\WpfApplication19\WpfApplication19\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+         tr {
+            background-color: #fff;                   
+        }
+        .alt {
+            background-color: #ccc;
+        }
+        .highlight {font-weight:bold; font-style:italic; }
+    </style>
+    <script src="jquery-2.1.4.js"></script>
+    <script type="text/javascript">     
+        //$(document).ready(function () {
+        //    $('tr:even').addClass('alt');
+        //});
+        $(document).ready(function () {
+            //$('tr:nth-child(even)').addClass('alt');
+            //$('td:contains(History)').addClass('highlight'); //为字符History的元素添加样式
+            //$('td:contains(History)').next().addClass('highlight'); //为字符History的下一个元素添加样式        
+            //$('td:contains(Romeo)').nextAll().addClass('highlight');//为字符Romeo的元素后的所有元素添加样式  
+            //$('td:contains(Tragedy)').nextAll().addBack().addClass('highlight');//为字符Romeo的元素本身和元素后的所有元素添加样式  
+            $('td:contains(Henry)') //取得包含Henry的所有单元格
+             .parent() //取得它的父元素
+             .find('td:eq(1)') //在父元素中查找第2个单元格
+             .addClass('highlight') //为该单元格添加hightlight类
+             .end() //恢复到包含Henry的单元格的父元素
+             .find('td:eq(2)') //在父元素中查找第3个单元格
+             .addClass('highlight'); //为该单元格添加hightlight类
+        });
+    </script>
+</head>
+<body>
+    <h2>Shakespeare's Plays</h2>
+    <table>
+        <tr>
+            <td>As You Like It</td>
+            <td>Comedy</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>All's Well that Ends Well</td>
+            <td>Comedy</td>
+            <td>1601</td>
+        </tr>
+        <tr>
+            <td>Hamlet</td>
+            <td>Tragedy</td>
+            <td>1604</td>
+        </tr>
+        <tr>
+            <td>Macbeth</td>
+            <td>Tragedy</td>
+            <td>1606</td>
+        </tr>
+        <tr>
+            <td>Romeo and Juliet</td>
+            <td>Tragedy</td>
+            <td>1595</td>
+        </tr>
+        <tr>
+            <td>Henry IV, Part I</td>
+            <td>History</td>
+            <td>1596</td>
+        </tr>
+        <tr>
+            <td>Henry V</td>
+            <td>History</td>
+            <td>1599</td>
+        </tr>
+    </table>
+    <h2>Shakespeare's Sonnets</h2>
+    <table>
+        <tr>
+            <td>The Fair Youth</td>
+            <td>1–126</td>
+        </tr>
+        <tr>
+            <td>The Dark Lady</td>
+            <td>127–152</td>
+        </tr>
+        <tr>
+            <td>The Rival Poet</td>
+            <td>78–86</td>
+        </tr>
+    </table>
+</body>
+</html>

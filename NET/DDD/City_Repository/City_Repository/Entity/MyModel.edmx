@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MyModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MyModelStoreContainer">
+    <EntitySet Name="CitySet" EntityType="MyModel.Store.CitySet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProvinceSet" EntityType="MyModel.Store.ProvinceSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DictTypeSet1" EntityType="MyModel.Store.DictTypeSet1" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ProvinceCity" Association="MyModel.Store.ProvinceCity">
+      <End Role="Province" EntitySet="ProvinceSet" />
+      <End Role="City" EntitySet="CitySet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CitySet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CityName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ZipCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Province_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProvinceSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProvinceName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DictTypeSet1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Seq" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Editor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastUpdated" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PID" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="ProvinceCity">
+    <End Role="Province" Type="MyModel.Store.ProvinceSet" Multiplicity="1" />
+    <End Role="City" Type="MyModel.Store.CitySet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Province">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="Province_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MyModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="MyModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CitySet" EntityType="MyModel.City" />
+          <EntitySet Name="ProvinceSet" EntityType="MyModel.Province" />
+          <EntitySet Name="DictTypeSet1" EntityType="MyModel.DictType" />
+          <AssociationSet Name="ProvinceCity" Association="MyModel.ProvinceCity">
+            <End Role="Province" EntitySet="ProvinceSet" />
+            <End Role="City" EntitySet="CitySet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CityName" Type="String" Nullable="false" />
+          <Property Name="ZipCode" Type="String" Nullable="false" />
+          <NavigationProperty Name="Province" Relationship="MyModel.ProvinceCity" FromRole="City" ToRole="Province" />
+        </EntityType>
+        <EntityType Name="Province">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProvinceName" Type="String" Nullable="false" />
+          <NavigationProperty Name="City" Relationship="MyModel.ProvinceCity" FromRole="Province" ToRole="City" />
+        </EntityType>
+        <EntityType Name="DictType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Remark" Type="String" Nullable="false" />
+          <Property Name="Seq" Type="String" Nullable="false" />
+          <Property Name="Editor" Type="String" Nullable="false" />
+          <Property Name="LastUpdated" Type="String" Nullable="false" />
+          <Property Name="PID" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="ProvinceCity">
+          <End Type="MyModel.Province" Role="Province" Multiplicity="1" />
+          <End Type="MyModel.City" Role="City" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyModelStoreContainer" CdmEntityContainer="MyModelContainer">
+    <EntitySetMapping Name="CitySet">
+      <EntityTypeMapping TypeName="IsTypeOf(MyModel.City)">
+        <MappingFragment StoreEntitySet="CitySet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProvinceSet">
+      <EntityTypeMapping TypeName="IsTypeOf(MyModel.Province)">
+        <MappingFragment StoreEntitySet="ProvinceSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProvinceName" ColumnName="ProvinceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DictTypeSet1">
+      <EntityTypeMapping TypeName="IsTypeOf(MyModel.DictType)">
+        <MappingFragment StoreEntitySet="DictTypeSet1">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ProvinceCity" TypeName="MyModel.ProvinceCity" StoreEntitySet="CitySet">
+      <EndProperty Name="Province">
+        <ScalarProperty Name="Id" ColumnName="Province_Id" />
+      </EndProperty>
+      <EndProperty Name="City">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

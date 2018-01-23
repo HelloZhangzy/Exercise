@@ -1,0 +1,11 @@
+E:\Exercise\Net\DDD\DBRepository\DBRepository\bin\Debug\DBRepository.exe.config
+E:\Exercise\Net\DDD\DBRepository\DBRepository\bin\Debug\DBRepository.exe
+E:\Exercise\Net\DDD\DBRepository\DBRepository\bin\Debug\DBRepository.pdb
+E:\Exercise\Net\DDD\DBRepository\DBRepository\bin\Debug\EntityFramework.dll
+E:\Exercise\Net\DDD\DBRepository\DBRepository\bin\Debug\EntityFramework.SqlServer.dll
+E:\Exercise\Net\DDD\DBRepository\DBRepository\bin\Debug\EntityFramework.xml
+E:\Exercise\Net\DDD\DBRepository\DBRepository\bin\Debug\EntityFramework.SqlServer.xml
+E:\Exercise\Net\DDD\DBRepository\DBRepository\obj\Debug\DBRepository.exe
+E:\Exercise\Net\DDD\DBRepository\DBRepository\obj\Debug\DBRepository.pdb
+E:\Exercise\Net\DDD\DBRepository\DBRepository\obj\Debug\DBRepository.csprojResolveAssemblyReference.cache
+E:\Exercise\Net\DDD\DBRepository\DBRepository\obj\Debug\DBRepository.csproj.CoreCompileInputs.cache

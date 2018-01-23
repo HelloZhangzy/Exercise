@@ -1,0 +1,15 @@
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\bin\Debug\WpfApplication13.exe
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\bin\Debug\WpfApplication13.pdb
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\WpfApplication13.csprojResolveAssemblyReference.cache
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\MainWindow.g.cs
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\App.g.cs
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\WpfApplication13_MarkupCompile.cache
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\WpfApplication13_MarkupCompile.lref
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\MainWindow.baml
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\WpfApplication13.g.resources
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\WpfApplication13.Properties.Resources.resources
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\WpfApplication13.csproj.GenerateResource.Cache
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\WpfApplication13.exe
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\WpfApplication13.pdb
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\Window1.baml
+F:\Exercise\Net\C#\WPF\WpfApplication13\WpfApplication13\obj\Debug\Window1.g.cs

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+<style type="text/css">
+    #menu{
+        font-size:16px;
+        width:140px;
+        margin:0 auto;
+        border:solid 1px #ccc;
+    }
+    #menu a span{
+         display:none;
+    }
+    #menu a, #menu a:visited{
+        text-decoration:none;text-align:center;color:#0094ff;
+        display:block;
+        padding:4px;
+        background-color:#fff;
+        border:solid 1px #fff;
+        position:relative;
+    }
+    #menu a:hover{
+        border-color:#c00;
+    }
+    #menu a:hover span{
+        display:block;
+        position:absolute;
+        height:0;
+        width:0;
+        overflow:hidden;
+        border:solid 8px #fff;
+        top:4px;
+    }
+    #menu a:hover span.left{
+        border-left-color:#c00;
+        left:8px;
+    }
+    #menu a:hover span.right{
+        border-right-color:#c00;
+        right:8px;        
+    }
+    #menu a:hover span.Show{    
+        display:block;      
+        color:#000;        
+        font-size:12px;              
+        position:absolute;        
+        left:150px;
+        top:0px;
+        height:auto;
+        padding:5px;
+        background-color:#eee;
+        border:1px dotted #234;     
+        width:200px;   
+    }
+    #M{
+        font-family:Arial;
+        font-size:14px;
+    }
+    #M a,#M a:visited{
+        display:block;
+        float:left;
+        position:relative;
+        background-color:#c00;
+        color:#fff;
+        text-decoration:none;
+        padding:6px;
+        margin:1px 0 0 1px;
+    }
+
+</style>
+</head>
+<body>
+    <div id="menu">
+        <a href="#"><span class="left"></span>Home<span class="right"></span><span class="Show">HomeHome</span></a>
+        <a href="#"><span class="left"></span>HomeHome<span class="right"></span><span class="Show">HomeHome</span></a>
+        <a href="#"><span class="left"></span>HomeHome<span class="right"></span><span class="Show">HomeHome</span></a>
+        <a href="#"><span class="left"></span>HomeHome<span class="right"></span><span class="Show">HomeHome</span></a>
+        <a href="#"><span class="left"></span>HomeHome<span class="right"></span><span class="Show">HomeHome</span></a>
+        <a href="#"><span class="left"></span>HomeHome<span class="right"></span><span class="Show">HomeHome</span></a>
+    </div>
+
+</body>
+</html>

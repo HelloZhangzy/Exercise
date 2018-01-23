@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        body{
+            margin:20px;
+            font:12px arial;
+        }
+        .Father {
+            margin:10px;
+            background-color:#a0c8ff;
+            border:1px dashed #000000;
+            padding:15px;
+        }
+        .block1{
+            background-color:#fff0ac;
+            border:1px dashed #000000;
+            padding:10px;
+            /*默认Staic*/           
+        }
+        .block2{
+            background-color:#fff0ac;
+            border:1px dashed #000000;
+            padding:10px;
+            position:relative;/*relative相对定位*/
+            left:30px;
+            top:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Father">
+        <div class="block1">Box-1(默认staic)</div>
+    </div>
+    <div class="Father">
+        <div class="block2">Box-2(relative相对定位)</div>
+    </div>
+    
+    <div style="display:inline">Box1</div>
+    <div style="display:inline">Box2</div>
+    <span style="display:block">Box3</span>
+    <span style="display:block">Box4</span>
+    <span style="display:block">Box5</span>
+    <span style="display:block">Box6</span>
+    <div style="display:none">Box7</div>
+    <span style="display:none">Box8</span>
+</body>
+</html>

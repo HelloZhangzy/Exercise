@@ -1,0 +1,37 @@
+﻿h3{
+    font-size:10px;
+    color:royalblue;
+    background-color:honeydew;
+}
+h3.red{
+          color:darkblue;
+}
+.red {
+    font-size:10px;
+    color:red;
+    background-color:white;
+}
+h1, h2, h3, h4 {
+    text-align:center;
+    text-decoration-style:wavy;
+}
+.green {
+    font-size:10px;
+    color:forestgreen;
+    background-color:white;
+}
+.bord{
+    font:bold;
+    font-size:10px;
+    color:aquamarine;
+}
+p span{
+    color:red;
+}
+span{
+    color:blue;
+}
+
+h5>span{
+    color:blue;
+}

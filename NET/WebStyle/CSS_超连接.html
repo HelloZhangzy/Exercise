@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+<style type="text/css">
+    body{
+        cursor:move;
+    }
+    a{       
+        display:block;        
+        font-size:.8em;
+        text-align:center;
+        margin:3px;
+        padding:5px;
+        ruby-align:center;
+    }
+    a:link,a:visited{ /*超连接正常状态、被访问状态*/
+        color:#a62020;
+        padding:4px 10px 4px 10px;
+        background-color:#ecd8db;
+        text-decoration:none;
+        border-top:1px solid #eeeeee;
+        border-left:1px solid #eeeeee;
+        border-bottom:1px solid #717171;
+        border-right:1px solid #717171 ;
+    }
+    a:hover{ /*鼠标经过时的状态*/
+        color:#821818;
+        padding:5px 8px 3px 12px;
+        background-color:#e2c4c9;
+        border-top:1px solid #717171;
+        border-left:1px solid #717171;
+        border-bottom:1px solid #eeeeee;
+        border-right:1px solid #eeeeee;
+    }     
+    div{
+        width:200px;
+        float:left;
+    }
+    span.left{
+        border-left-color:#333;        
+        left:10px;
+    }
+    span.right{
+        border-right-color:#333;
+        right:10px;
+    }
+    .SJ_L{                
+        position:absolute;        
+        overflow:hidden;
+        border-style:solid;
+        border-width:5px;
+        border-color:#ffffff #ffffff #ffffff #333;  
+        float:left;                  
+    }
+    .SJ_R{                
+        position:absolute;        
+        overflow:hidden;
+        border-style:solid;
+        border-width:5px;
+        border-color:#ffffff #333 #ffffff #ffffff;
+        float:right;
+    }    
+   
+</style>
+</head>
+<body>
+    <div>
+       <div><span class="left"></span><a href="#">Home</a><span class="right"></span></div> 
+        <a href="#">Home2</a>
+        <a href="#">Home3</a>
+        <a href="#">Home4</a>
+        <a href="#">Home5</a>
+        <a href="#">Home6</a>
+    </div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Home2</a>
+        <a href="#">Home3</a>
+        <a href="#">Home4</a>
+        <a href="#">Home5</a>
+        <a href="#">Home6</a>
+        <div class="XJ"></div>
+    </div>
+
+    <!--<div><div class="SJ"></div></div>-->
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CSS层叠样式</title>
+	<meta charset="utf-8" />
+<style type="text/css">
+    p{
+        color:green;
+    }
+    .red {
+        color:red;
+    }
+    .purple {
+        color:purple;
+    }
+    #line3 {
+        color:blue;
+    }
+</style>
+</head>
+<body>
+    <p>1行</p>
+    <p class="red">2行</p>
+    <p id="line3">3行</p>
+    <p style="color:orange;" id="line3">4行</p>
+    <p class="purple red">5行</p>
+</body>
+</html>

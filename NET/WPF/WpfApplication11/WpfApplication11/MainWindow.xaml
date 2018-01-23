@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApplication11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" ></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="bt1" Click="bt1_Click" Grid.Column="0">bt1</Button>
+            <Button x:Name="bt2" Click="bt2_Click" Grid.Column="1">bt2</Button>           
+        </Grid>
+        <Grid Grid.Row="1">
+            <Frame x:Name="frame" NavigationUIVisibility="Hidden"></Frame>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e5e697acf82f49f2aa90ffe0ff05ab9d" Name="Diagram1" ZoomLevel="86" >
+        <EntityTypeShape EntityType="SaleOrder.Customer" Width="1.5" PointX="1.375" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleOrder.Order" Width="1.5" PointX="4.5" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleOrder.CreditCard" Width="1.5" PointX="1.125" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleOrder.SalesOrder" Width="1.5" PointX="5.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleOrder.ReturnOrder" Width="1.5" PointX="3.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleOrder.OrderLine" Width="1.5" PointX="6.875" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleOrder.Category" Width="1.5" PointX="9.625" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleOrder.Item" Width="1.5" PointX="9.375" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="SaleOrder.CustomerCreditCard" />
+        <AssociationConnector Association="SaleOrder.CustomerOrder" />
+        <InheritanceConnector EntityType="SaleOrder.SalesOrder" />
+        <InheritanceConnector EntityType="SaleOrder.ReturnOrder" />
+        <AssociationConnector Association="SaleOrder.SalesOrderReturnOrder" />
+        <AssociationConnector Association="SaleOrder.OrderOrderLine" />
+        <AssociationConnector Association="SaleOrder.OrderLineItem" />
+        <AssociationConnector Association="SaleOrder.CategoryItem" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

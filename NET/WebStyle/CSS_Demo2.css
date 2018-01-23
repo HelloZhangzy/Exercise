@@ -1,0 +1,33 @@
+﻿
+h1{
+    color:blue;
+    text-decoration:underline;
+}
+em{
+    color:red;
+}
+
+/* 所的层级均设为绿色并加粗
+li {
+    color:green;
+    font-weight:bold;
+}
+*/
+/*指定层级设置为绿色并加粗   
+ul li ul li ul{
+    color:red;
+    font-weight:bold; 
+}
+*/
+/*效果同上
+li li{
+    color:red;
+    font-weight:bold; 
+}
+*/
+
+/*延展效果最置最后3条*/
+ul ol{
+    color:red;
+    font-weight:bold; 
+}

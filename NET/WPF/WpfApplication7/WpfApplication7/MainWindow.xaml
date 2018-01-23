@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApplication7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="LayoutRoot" Background="White" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="例2 - 它能工作!" />
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="艺术家:  " />
+            <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding ArtistName}" />
+            <Button Grid.Column="1" Grid.Row="2" Name="ButtonUpdateArtist" Content="更新艺术家姓名" Click="ButtonUpdateArtist_Click" />
+        </Grid>
+        
+        <Grid x:Name="LayoutRoot2" Background="White" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button Content="更新艺术家" Grid.Row="3" Grid.ColumnSpan="2" Width="80" HorizontalAlignment="Left" Command="{Binding UpdateArtistName}"></Button>
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="例3 - 使用ICommand接口!" />
+            <TextBlock Grid.Column="0" Grid.Row="2" Text="艺术家:  " />
+            <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding ArtistName}" />
+            <Button Grid.Column="1" Grid.Row="3" Name="ButtonUpdateArtist2" Content="更新艺术家姓名"    Command="{Binding UpdateArtistName}"/>
+        </Grid>
+
+    </Grid>
+</Window>

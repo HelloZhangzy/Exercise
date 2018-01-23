@@ -1,0 +1,415 @@
+﻿<Window x:Class="WpfApplication12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Color x:Key="WindowColor">#FFE8EDF9</Color>
+        <Color x:Key="ContentAreaColorLight">#FFC5CBF9</Color>
+        <Color x:Key="ContentAreaColorDark">#FF7381F9</Color>
+
+        <Color x:Key="DisabledControlLightColor">#FFE8EDF9</Color>
+        <Color x:Key="DisabledControlDarkColor">#FFC5CBF9</Color>
+        <Color x:Key="DisabledForegroundColor">#FF888888</Color>
+
+        <Color x:Key="SelectedBackgroundColor">#FFC5CBF9</Color>
+        <Color x:Key="SelectedUnfocusedColor">#FFDDDDDD</Color>
+
+        <Color x:Key="ControlLightColor">White</Color>
+        <Color x:Key="ControlMediumColor">#FF7381F9</Color>
+        <Color x:Key="ControlDarkColor">#FF211AA9</Color>
+
+        <Color x:Key="ControlMouseOverColor">#FF3843C4</Color>
+        <Color x:Key="ControlPressedColor">#FF211AA9</Color>
+
+
+        <Color x:Key="GlyphColor">#FF444444</Color>
+        <Color x:Key="GlyphMouseOver">sc#1, 0.004391443, 0.002428215, 0.242281124</Color>
+
+        <!--Border colors-->
+        <Color x:Key="BorderLightColor">#FFCCCCCC</Color>
+        <Color x:Key="BorderMediumColor">#FF888888</Color>
+        <Color x:Key="BorderDarkColor">#FF444444</Color>
+
+        <Color x:Key="PressedBorderLightColor">#FF888888</Color>
+        <Color x:Key="PressedBorderDarkColor">#FF444444</Color>
+
+        <Color x:Key="DisabledBorderLightColor">#FFAAAAAA</Color>
+        <Color x:Key="DisabledBorderDarkColor">#FF888888</Color>
+
+        <Color x:Key="DefaultBorderBrushDarkColor">Black</Color>
+
+        <!--Control-specific resources.-->
+        <Color x:Key="HeaderTopColor">#FFC5CBF9</Color>
+        <Color x:Key="DatagridCurrentCellBorderColor">Black</Color>
+        <Color x:Key="SliderTrackDarkColor">#FFC5CBF9</Color>
+
+        <Color x:Key="NavButtonFrameColor">#FF3843C4</Color>
+
+        <LinearGradientBrush x:Key="MenuPopupBrush"
+                     EndPoint="0.5,1"
+                     StartPoint="0.5,0">
+            <GradientStop Color="{DynamicResource ControlLightColor}"
+                Offset="0" />
+            <GradientStop Color="{DynamicResource ControlMediumColor}"
+                Offset="0.5" />
+            <GradientStop Color="{DynamicResource ControlLightColor}"
+                Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ProgressBarIndicatorAnimatedFill"
+                     StartPoint="0,0"
+                     EndPoint="1,0">
+            <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#000000FF"
+                    Offset="0" />
+                    <GradientStop Color="#600000FF"
+                    Offset="0.4" />
+                    <GradientStop Color="#600000FF"
+                    Offset="0.6" />
+                    <GradientStop Color="#000000FF"
+                    Offset="1" />
+                </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+        
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="SnapsToDevicePixels"          Value="True" />
+            <Setter Property="OverridesDefaultStyle"          Value="True" />
+            <Setter Property="KeyboardNavigation.TabNavigation"          Value="None" />
+            <Setter Property="FocusVisualStyle"          Value="{x:Null}" />
+            <Setter Property="MinWidth"          Value="120" />
+            <Setter Property="MinHeight"          Value="20" />
+            <Setter Property="AllowDrop"          Value="true" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                        <Border Name="Border" CornerRadius="2" Padding="2" BorderThickness="1">
+                            <Border.Background>
+                                <SolidColorBrush Color="{DynamicResource ControlLightColor}" />
+                            </Border.Background>
+                            <Border.BorderBrush>
+                                <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                            </Border.BorderBrush>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0"   Value="{StaticResource DisabledControlLightColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="ReadOnly">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                Storyboard.TargetProperty="(Panel.Background).
+                    (SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0"
+                                         Value="{StaticResource DisabledControlDarkColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="MouseOver" />
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ScrollViewer Margin="0"
+                        x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid Background="#FFB3CDCC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Border Margin="10" Grid.Row="0" Grid.Column="0" ClipToBounds="True" Width=" 50" Height="50" BorderBrush="White"  BorderThickness="0.5" Opacity="0.5">
+            <Border BorderBrush="White" BorderThickness="1"  >
+                <Border.Effect>
+                    <DropShadowEffect Color="White" BlurRadius="100" ShadowDepth="300" />
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border Grid.Row="0" Grid.Column="2" CornerRadius="7,7,7,7" Margin="10" ClipToBounds="True" Width="200" Height="200">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="3" Direction="270" Opacity="1" Color="#FFB3CECD"  />
+            </Border.Effect>
+            <Grid HorizontalAlignment="Stretch">
+                <Border   CornerRadius="7,7,7,7" Background="#FFD1E2E1"   BorderThickness="1"   VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Opacity="0.67">
+                    <Border.Effect>
+                        <DropShadowEffect Color="White"  BlurRadius="10" ShadowDepth="1" />
+                    </Border.Effect>
+                </Border>
+                <Border VerticalAlignment="Top"  Background="#FF139992" Height="40" CornerRadius="7,7,0,0">
+                    <TextBlock FontSize="20" Foreground="White">客户信息</TextBlock>
+                </Border>
+            </Grid>            
+        </Border>
+        
+        <Grid Grid.Column="1" Margin="0,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Height="24" Width="24" Background="#00FFFFFF">
+                            <Ellipse Name="Circle" StrokeThickness="1">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                            <GradientStop Offset="0.1" Color="#FFCCD4E9" />
+                                            <GradientStop Offset="0.47" Color="#FF4881D2" />
+                                            <GradientStop Offset="0.47" Color="#FF001A5A" />
+                                            <GradientStop Offset="0.7" Color="#FF007BD6" />
+                                            <GradientStop Offset="0.85" Color="#FF54DAFF" />
+                                            <GradientStop Offset="0.95" Color="#FF86FFFF" />
+                                            <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                                <Ellipse.Stroke>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Offset="0" Color="#FF6C90C4" />
+                                            <GradientStop Offset="0.5" Color="#FF315BB4" />
+                                            <GradientStop Offset="0.5" Color="#FF002091" />
+                                            <GradientStop Offset="1" Color="#FF08377C" />
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Ellipse.Stroke>
+                            </Ellipse>
+                            <Path  RenderTransformOrigin="0.5,0" Data="M0.37,7.69L5.74,14.2A1.5,1.5,0,1,0,10.26,12.27L8.42,10.42 14.9,10.39A1.5,1.5,0,1,0,14.92,5.87L8.44,5.9 10.31,4.03A1.5,1.5,0,1,0,5.79,1.77z" HorizontalAlignment="Center" Name="Arrow" VerticalAlignment="Center" StrokeThickness="0.75">
+                                <Path.Fill>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Offset="0.5" Color="#FFFFFFFF" />
+                                            <GradientStop Offset="0.5" Color="#FFEEEEEE" />
+                                            <GradientStop Offset="1" Color="#FFB0B0B0" />
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Path.Fill>
+                                <Path.Stroke>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Offset="0" Color="#FF8AB1FB" />
+                                            <GradientStop Offset="1" Color="#FF002874" />
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Path.Stroke>
+                            </Path>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="UIElement.IsEnabled" Value="false">
+                                <Setter Property="Shape.Fill" TargetName="Circle">
+                                    <Setter.Value>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <LinearGradientBrush.GradientStops>
+                                                <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                <GradientStop Offset="0.5" Color="#FFEBEEF5" />
+                                                <GradientStop Offset="0.5" Color="#FFD8DDEB" />
+                                                <GradientStop Offset="1" Color="#FFDFE2F0" />
+                                            </LinearGradientBrush.GradientStops>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Shape.Stroke" TargetName="Circle">
+                                    <Setter.Value>
+                                        <SolidColorBrush>#FFB5BACE</SolidColorBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Shape.Stroke" TargetName="Arrow">
+                                    <Setter.Value>
+                                        <SolidColorBrush>#B0B5BACE</SolidColorBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Shape.Fill" TargetName="Arrow">
+                                    <Setter.Value>
+                                        <SolidColorBrush>#D0FFFFFF</SolidColorBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="UIElement.IsMouseOver" Value="true">
+                                <Setter Property="Shape.Fill" TargetName="Circle">
+                                    <Setter.Value>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <LinearGradientBrush.GradientStops>
+                                                <GradientStop Offset="0" Color="#FFFFFFFF" />
+                                                <GradientStop Offset="0.1" Color="#FFDFEDF9" />
+                                                <GradientStop Offset="0.47" Color="#FF3086E1" />
+                                                <GradientStop Offset="0.47" Color="#FF003B91" />
+                                                <GradientStop Offset="0.7" Color="#FF1793EF" />
+                                                <GradientStop Offset="0.85" Color="#FF5AD4FF" />
+                                                <GradientStop Offset="0.95" Color="#FFBDFFFF" />
+                                                <GradientStop Offset="1" Color="#FFFFFFFF" />
+                                            </LinearGradientBrush.GradientStops>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+
+                            </Trigger>
+                            <Trigger Property="ButtonBase.IsPressed" Value="True">
+                                <Setter Property="Shape.Fill" TargetName="Circle">
+                                    <Setter.Value>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <LinearGradientBrush.GradientStops>
+                                                <GradientStop Offset="0" Color="#FFC0D2F5" />
+                                                <GradientStop Offset="0.47" Color="#FF5E7A9C" />
+                                                <GradientStop Offset="0.47" Color="#FF00062D" />
+                                                <GradientStop Offset="0.7" Color="#FF005F9F" />
+                                                <GradientStop Offset="0.85" Color="#FF1FA4E2" />
+                                                <GradientStop Offset="0.95" Color="#FF61DAFF" />
+                                                <GradientStop Offset="1" Color="#FF48CFFF" />
+                                            </LinearGradientBrush.GradientStops>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Grid.Row="1" Margin="10" Height="50" BorderBrush="#FF0C617C" Foreground="{x:Null}">
+                <Button.Effect>
+                    <BlurEffect KernelType="Box" Radius="0.8" RenderingBias="Quality"/>                    
+                </Button.Effect>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FFCFEEED"/>
+                        <GradientStop Color="#FFB9E2E0" Offset="0.904"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+            <Button Grid.Row="2" Margin="10" Height="50" BorderBrush="#FF0C617C" BorderThickness="1">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border ClipToBounds="True" Margin="10">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#FF0C617C"  BlurRadius="5" ShadowDepth="0" Opacity="0.7" />
+                            </Border.Effect>
+                            <Border BorderThickness="1" BorderBrush="#FF0C617C">
+                                <Border.Effect>
+                                    <BlurEffect KernelType="Box" Radius="0.8" RenderingBias="Quality"/>
+                                </Border.Effect>
+                                <Border.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFCFEEED"/>
+                                        <GradientStop Color="#FFB9E2E0" Offset="0.904"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+                        </Border>
+                    </ControlTemplate>
+                    </Button.Template>
+            </Button>
+            <Path Grid.Row="3" RenderTransformOrigin="0.5,0" Data="M0.37,7.69L5.74,14.2A1.5,1.5,0,1,0,10.26,12.27L8.42,10.42 14.9,10.39A1.5,1.5,0,1,0,14.92,5.87L8.44,5.9 10.31,4.03A1.5,1.5,0,1,0,5.79,1.77z" HorizontalAlignment="Center" Name="Arrow" VerticalAlignment="Center" StrokeThickness="0.75">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="0.5" Color="#FFFFFFFF" />
+                            <GradientStop Offset="0.5" Color="#FFEEEEEE" />
+                            <GradientStop Offset="1" Color="#FFB0B0B0" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.Stroke>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="0" Color="#FF8AB1FB" />
+                            <GradientStop Offset="1" Color="#FF002874" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Path.Stroke>
+            </Path>
+            <TextBox Grid.Row="4" Height="10" HorizontalAlignment="Stretch"></TextBox>
+            <!--<ListView Grid.Row="5" Name="LV_Test" SelectionMode="Multiple" Background="{x:Null}">
+                <ListView.Template>
+                    <ControlTemplate>
+                        <Border CornerRadius="10" BorderBrush="RoyalBlue" BorderThickness="5">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" >
+                                <ItemsPresenter />
+                            </ScrollViewer>
+                        </Border>
+                    </ControlTemplate>
+                </ListView.Template>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel IsItemsHost="True"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                    <Border Name="BD_Collector" CornerRadius="5" Background="DarkSeaGreen" Width="auto" Height="30" Margin="5">
+                                        <Label Content="{Binding}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="13" />
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="BD_Collector" Property="Background" Value="YellowGreen" />
+                                        </Trigger>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="BD_Collector" Property="Background" Value="DarkGreen" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>-->
+
+            <Border Grid.Row="5" CornerRadius="7" ClipToBounds="True">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" Opacity="0.3" Direction="132" Color="#FF0A5651"></DropShadowEffect>
+                </Border.Effect>
+                <TextBox  Margin="2"> </TextBox>
+            </Border>
+        </Grid>
+        
+        <!--投影-->
+        <!--<Border Background="White" Opacity="0.4"  CornerRadius="7,7,7,7">
+                        <Border.Effect>
+                            <DropShadowEffect Color="White"  ShadowDepth="10" Direction="270" Opacity="1" />
+                        </Border.Effect>
+                    </Border>-->
+        <!--标签-->
+        <!--
+        <Border Height="40" Background="#FF139992" CornerRadius="7,7,0,0" VerticalAlignment="Top"></Border>
+        -->
+        <!--内发光-->
+        <!--<Border CornerRadius="7,7,7,7">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="0"  
+                          Color="White"  
+                          Opacity="1"  
+                          BlurRadius="1000"/>
+                        </Border.Effect>
+                    </Border>-->
+
+    </Grid>
+</Window>

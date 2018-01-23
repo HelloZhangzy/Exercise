@@ -1,0 +1,13 @@
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\obj\Debug\OrderRepository.csprojResolveAssemblyReference.cache
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\obj\Debug\OrderRepository.Properties.Resources.resources
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\obj\Debug\OrderRepository.csproj.GenerateResource.Cache
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\bin\Debug\OrderRepository.exe.config
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\bin\Debug\OrderRepository.exe
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\bin\Debug\OrderRepository.pdb
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\bin\Debug\EntityFramework.dll
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\bin\Debug\EntityFramework.SqlServer.dll
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\bin\Debug\EntityFramework.xml
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\bin\Debug\EntityFramework.SqlServer.xml
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\obj\Debug\OrderRepository.exe
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\obj\Debug\OrderRepository.pdb
+E:\Exercise\Net\DDD\OrderRepository\OrderRepository\obj\Debug\OrderRepository.Form1.resources
