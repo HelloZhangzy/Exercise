@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "线程池", "线程池\线程池.csproj", "{D72563E5-49EA-4B36-A7CC-96FD82BE2ABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D72563E5-49EA-4B36-A7CC-96FD82BE2ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72563E5-49EA-4B36-A7CC-96FD82BE2ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72563E5-49EA-4B36-A7CC-96FD82BE2ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72563E5-49EA-4B36-A7CC-96FD82BE2ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4CF1DA8-9D65-451D-BC17-BEE46A9C5252}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "享元模式", "享元模式\享元模式.csproj", "{92AB91EE-6022-4044-A7FB-815ECD0CF8DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92AB91EE-6022-4044-A7FB-815ECD0CF8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92AB91EE-6022-4044-A7FB-815ECD0CF8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92AB91EE-6022-4044-A7FB-815ECD0CF8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92AB91EE-6022-4044-A7FB-815ECD0CF8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

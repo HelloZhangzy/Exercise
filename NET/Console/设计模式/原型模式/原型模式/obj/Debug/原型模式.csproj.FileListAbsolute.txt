@@ -1,0 +1,6 @@
+F:\Exercise\Net\C#\Console\原型模式\原型模式\bin\Debug\原型模式.exe.config
+F:\Exercise\Net\C#\Console\原型模式\原型模式\bin\Debug\原型模式.exe
+F:\Exercise\Net\C#\Console\原型模式\原型模式\bin\Debug\原型模式.pdb
+F:\Exercise\Net\C#\Console\原型模式\原型模式\obj\Debug\原型模式.csprojResolveAssemblyReference.cache
+F:\Exercise\Net\C#\Console\原型模式\原型模式\obj\Debug\原型模式.exe
+F:\Exercise\Net\C#\Console\原型模式\原型模式\obj\Debug\原型模式.pdb

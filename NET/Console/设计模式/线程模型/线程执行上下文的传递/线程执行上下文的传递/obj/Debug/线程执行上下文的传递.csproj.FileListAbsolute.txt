@@ -1,0 +1,6 @@
+E:\Exercise\Net\C#\Console\线程模型\线程执行上下文的传递\线程执行上下文的传递\bin\Debug\线程执行上下文的传递.exe.config
+E:\Exercise\Net\C#\Console\线程模型\线程执行上下文的传递\线程执行上下文的传递\bin\Debug\线程执行上下文的传递.exe
+E:\Exercise\Net\C#\Console\线程模型\线程执行上下文的传递\线程执行上下文的传递\bin\Debug\线程执行上下文的传递.pdb
+E:\Exercise\Net\C#\Console\线程模型\线程执行上下文的传递\线程执行上下文的传递\obj\Debug\线程执行上下文的传递.csproj.CoreCompileInputs.cache
+E:\Exercise\Net\C#\Console\线程模型\线程执行上下文的传递\线程执行上下文的传递\obj\Debug\线程执行上下文的传递.exe
+E:\Exercise\Net\C#\Console\线程模型\线程执行上下文的传递\线程执行上下文的传递\obj\Debug\线程执行上下文的传递.pdb

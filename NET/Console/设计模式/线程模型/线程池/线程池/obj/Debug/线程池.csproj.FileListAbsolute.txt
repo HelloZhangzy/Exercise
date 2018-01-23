@@ -1,0 +1,7 @@
+E:\Exercise\Net\C#\Console\线程模型\线程池\线程池\bin\Debug\线程池.exe.config
+E:\Exercise\Net\C#\Console\线程模型\线程池\线程池\bin\Debug\线程池.exe
+E:\Exercise\Net\C#\Console\线程模型\线程池\线程池\bin\Debug\线程池.pdb
+E:\Exercise\Net\C#\Console\线程模型\线程池\线程池\obj\Debug\线程池.csprojResolveAssemblyReference.cache
+E:\Exercise\Net\C#\Console\线程模型\线程池\线程池\obj\Debug\线程池.csproj.CoreCompileInputs.cache
+E:\Exercise\Net\C#\Console\线程模型\线程池\线程池\obj\Debug\线程池.exe
+E:\Exercise\Net\C#\Console\线程模型\线程池\线程池\obj\Debug\线程池.pdb

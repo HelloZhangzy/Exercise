@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "简单线程", "简单线程\简单线程.csproj", "{20C6818D-B04C-425F-AC53-2BF6AC2FD44A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20C6818D-B04C-425F-AC53-2BF6AC2FD44A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C6818D-B04C-425F-AC53-2BF6AC2FD44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C6818D-B04C-425F-AC53-2BF6AC2FD44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C6818D-B04C-425F-AC53-2BF6AC2FD44A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

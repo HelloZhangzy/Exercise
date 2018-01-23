@@ -1,0 +1,7 @@
+E:\Exercise\Net\C#\Console\线程模型\异步模式读取一个文件\异步模式读取一个文件\bin\Debug\异步模式读取一个文件.exe.config
+E:\Exercise\Net\C#\Console\线程模型\异步模式读取一个文件\异步模式读取一个文件\bin\Debug\异步模式读取一个文件.exe
+E:\Exercise\Net\C#\Console\线程模型\异步模式读取一个文件\异步模式读取一个文件\bin\Debug\异步模式读取一个文件.pdb
+E:\Exercise\Net\C#\Console\线程模型\异步模式读取一个文件\异步模式读取一个文件\obj\Debug\异步模式读取一个文件.csprojResolveAssemblyReference.cache
+E:\Exercise\Net\C#\Console\线程模型\异步模式读取一个文件\异步模式读取一个文件\obj\Debug\异步模式读取一个文件.csproj.CoreCompileInputs.cache
+E:\Exercise\Net\C#\Console\线程模型\异步模式读取一个文件\异步模式读取一个文件\obj\Debug\异步模式读取一个文件.exe
+E:\Exercise\Net\C#\Console\线程模型\异步模式读取一个文件\异步模式读取一个文件\obj\Debug\异步模式读取一个文件.pdb

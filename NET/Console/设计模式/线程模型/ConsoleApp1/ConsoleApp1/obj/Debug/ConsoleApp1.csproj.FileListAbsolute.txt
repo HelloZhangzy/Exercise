@@ -1,0 +1,6 @@
+E:\Exercise\Net\C#\Console\线程模型\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\Exercise\Net\C#\Console\线程模型\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\Exercise\Net\C#\Console\线程模型\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\Exercise\Net\C#\Console\线程模型\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\Exercise\Net\C#\Console\线程模型\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\Exercise\Net\C#\Console\线程模型\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

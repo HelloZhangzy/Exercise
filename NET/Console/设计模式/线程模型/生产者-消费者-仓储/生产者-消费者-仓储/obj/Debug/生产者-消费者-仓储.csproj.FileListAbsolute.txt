@@ -1,0 +1,7 @@
+E:\Exercise\Net\C#\Console\线程模型\生产者-消费者-仓储\生产者-消费者-仓储\bin\Debug\生产者-消费者-仓储.exe.config
+E:\Exercise\Net\C#\Console\线程模型\生产者-消费者-仓储\生产者-消费者-仓储\bin\Debug\生产者-消费者-仓储.exe
+E:\Exercise\Net\C#\Console\线程模型\生产者-消费者-仓储\生产者-消费者-仓储\bin\Debug\生产者-消费者-仓储.pdb
+E:\Exercise\Net\C#\Console\线程模型\生产者-消费者-仓储\生产者-消费者-仓储\obj\Debug\生产者-消费者-仓储.csprojResolveAssemblyReference.cache
+E:\Exercise\Net\C#\Console\线程模型\生产者-消费者-仓储\生产者-消费者-仓储\obj\Debug\生产者-消费者-仓储.csproj.CoreCompileInputs.cache
+E:\Exercise\Net\C#\Console\线程模型\生产者-消费者-仓储\生产者-消费者-仓储\obj\Debug\生产者-消费者-仓储.exe
+E:\Exercise\Net\C#\Console\线程模型\生产者-消费者-仓储\生产者-消费者-仓储\obj\Debug\生产者-消费者-仓储.pdb

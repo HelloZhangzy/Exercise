@@ -1,0 +1,6 @@
+F:\Exercise\Net\C#\Console\观察者模式\观察者模式\bin\Debug\观察者模式.exe.config
+F:\Exercise\Net\C#\Console\观察者模式\观察者模式\bin\Debug\观察者模式.exe
+F:\Exercise\Net\C#\Console\观察者模式\观察者模式\bin\Debug\观察者模式.pdb
+F:\Exercise\Net\C#\Console\观察者模式\观察者模式\obj\Debug\观察者模式.csprojResolveAssemblyReference.cache
+F:\Exercise\Net\C#\Console\观察者模式\观察者模式\obj\Debug\观察者模式.exe
+F:\Exercise\Net\C#\Console\观察者模式\观察者模式\obj\Debug\观察者模式.pdb

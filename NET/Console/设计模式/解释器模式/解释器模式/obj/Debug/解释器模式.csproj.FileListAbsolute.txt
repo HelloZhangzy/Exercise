@@ -1,0 +1,6 @@
+F:\Exercise\Net\C#\Console\解释器模式\解释器模式\bin\Debug\解释器模式.exe.config
+F:\Exercise\Net\C#\Console\解释器模式\解释器模式\obj\Debug\解释器模式.csprojResolveAssemblyReference.cache
+F:\Exercise\Net\C#\Console\解释器模式\解释器模式\bin\Debug\解释器模式.exe
+F:\Exercise\Net\C#\Console\解释器模式\解释器模式\bin\Debug\解释器模式.pdb
+F:\Exercise\Net\C#\Console\解释器模式\解释器模式\obj\Debug\解释器模式.exe
+F:\Exercise\Net\C#\Console\解释器模式\解释器模式\obj\Debug\解释器模式.pdb

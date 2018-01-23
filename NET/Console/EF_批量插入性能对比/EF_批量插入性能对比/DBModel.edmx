@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="GMNS201Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="MeterResponseSequence">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SourceID" Type="int" Nullable="false" />
+          <Property Name="DeviceCode" Type="bigint" Nullable="false" />
+          <Property Name="UseID" Type="int" Nullable="false" />
+          <Property Name="MeterID" Type="int" Nullable="false" />
+          <Property Name="ArrivalsState" Type="int" Nullable="false" />
+          <Property Name="ExecState" Type="int" Nullable="false" />
+          <Property Name="BusinessState" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="GMNS201ModelStoreContainer">
+          <EntitySet Name="MeterResponseSequence" EntityType="Self.MeterResponseSequence" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GMNS201Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="MeterResponseSequence">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SourceID" Type="Int32" Nullable="false" />
+          <Property Name="DeviceCode" Type="Int64" Nullable="false" />
+          <Property Name="UseID" Type="Int32" Nullable="false" />
+          <Property Name="MeterID" Type="Int32" Nullable="false" />
+          <Property Name="ArrivalsState" Type="Int32" Nullable="false" />
+          <Property Name="ExecState" Type="Int32" Nullable="false" />
+          <Property Name="BusinessState" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="GMNS201Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MeterResponseSequences" EntityType="Self.MeterResponseSequence" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GMNS201ModelStoreContainer" CdmEntityContainer="GMNS201Entities">
+          <EntitySetMapping Name="MeterResponseSequences">
+            <EntityTypeMapping TypeName="GMNS201Model.MeterResponseSequence">
+              <MappingFragment StoreEntitySet="MeterResponseSequence">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+                <ScalarProperty Name="DeviceCode" ColumnName="DeviceCode" />
+                <ScalarProperty Name="UseID" ColumnName="UseID" />
+                <ScalarProperty Name="MeterID" ColumnName="MeterID" />
+                <ScalarProperty Name="ArrivalsState" ColumnName="ArrivalsState" />
+                <ScalarProperty Name="ExecState" ColumnName="ExecState" />
+                <ScalarProperty Name="BusinessState" ColumnName="BusinessState" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

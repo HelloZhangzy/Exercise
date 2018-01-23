@@ -1,0 +1,7 @@
+E:\Exercise\Net\C#\Console\线程模型\线程锁\线程锁\bin\Debug\线程锁.exe.config
+E:\Exercise\Net\C#\Console\线程模型\线程锁\线程锁\bin\Debug\线程锁.exe
+E:\Exercise\Net\C#\Console\线程模型\线程锁\线程锁\bin\Debug\线程锁.pdb
+E:\Exercise\Net\C#\Console\线程模型\线程锁\线程锁\obj\Debug\线程锁.csprojResolveAssemblyReference.cache
+E:\Exercise\Net\C#\Console\线程模型\线程锁\线程锁\obj\Debug\线程锁.csproj.CoreCompileInputs.cache
+E:\Exercise\Net\C#\Console\线程模型\线程锁\线程锁\obj\Debug\线程锁.exe
+E:\Exercise\Net\C#\Console\线程模型\线程锁\线程锁\obj\Debug\线程锁.pdb

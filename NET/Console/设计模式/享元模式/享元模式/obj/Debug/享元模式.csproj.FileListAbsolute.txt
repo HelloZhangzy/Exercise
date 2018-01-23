@@ -1,0 +1,6 @@
+F:\Exercise\Net\C#\Console\享元模式\享元模式\bin\Debug\享元模式.exe.config
+F:\Exercise\Net\C#\Console\享元模式\享元模式\bin\Debug\享元模式.exe
+F:\Exercise\Net\C#\Console\享元模式\享元模式\bin\Debug\享元模式.pdb
+F:\Exercise\Net\C#\Console\享元模式\享元模式\obj\Debug\享元模式.csprojResolveAssemblyReference.cache
+F:\Exercise\Net\C#\Console\享元模式\享元模式\obj\Debug\享元模式.exe
+F:\Exercise\Net\C#\Console\享元模式\享元模式\obj\Debug\享元模式.pdb

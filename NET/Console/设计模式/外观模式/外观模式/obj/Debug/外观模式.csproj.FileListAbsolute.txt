@@ -1,0 +1,6 @@
+F:\Exercise\Net\C#\Console\外观模式\外观模式\bin\Debug\外观模式.exe.config
+F:\Exercise\Net\C#\Console\外观模式\外观模式\bin\Debug\外观模式.exe
+F:\Exercise\Net\C#\Console\外观模式\外观模式\bin\Debug\外观模式.pdb
+F:\Exercise\Net\C#\Console\外观模式\外观模式\obj\Debug\外观模式.csprojResolveAssemblyReference.cache
+F:\Exercise\Net\C#\Console\外观模式\外观模式\obj\Debug\外观模式.exe
+F:\Exercise\Net\C#\Console\外观模式\外观模式\obj\Debug\外观模式.pdb
